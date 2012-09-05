@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="mainbuttons" parent="@android:style/Widget.Button">
+        
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">6pt</item>
+        <item name="android:background">#B92A30</item>
+        <item name="android:width">80dip</item>
+        <item name="android:height">40dip</item>
+        
+        
+    </style>
+    
+    
+    <style name="mainbuttons2" parent="@android:style/Widget.Button">
+        
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">6pt</item>
+        <item name="android:background">#FFA500</item>
+        <item name="android:width">80dip</item>
+        <item name="android:height">40dip</item>
+        
+        
+    </style>
+    
+    <style name="worker_buttons" parent="@android:style/Widget.Button">
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">10pt</item>
+        <item name="android:background">@drawable/buttonshape</item>
+        <item name="android:height">45dp</item>
+        
+        
+    </style>
+    
+    <style name="main_buttons1" parent="@android:style/Widget.Button">
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">6pt</item>
+        <item name="android:background">@drawable/buttonshape</item>
+        <item name="android:height">45dp</item>
+        <item name="android:width">100dp</item>
+        <item name="android:padding">5dp</item>
+        
+        
+    </style>
+    
+    <style name="main_buttons2" parent="@android:style/Widget.Button">
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">6pt</item>
+        <item name="android:background">@drawable/buttonshape2</item>
+        <item name="android:height">45dp</item>
+        <item name="android:width">100dp</item>
+        <item name="android:padding">5dp</item>
+        
+        
+    </style>
+    
+    <style name="main_buttons3" parent="@android:style/Widget.Button">
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">6pt</item>
+        <item name="android:background">@drawable/buttonshape3</item>
+        <item name="android:height">45dp</item>
+        <item name="android:width">100dp</item>
+        <item name="android:padding">5dp</item>
+        
+        
+    </style>
+    
+    <style name="main_buttons4" parent="@android:style/Widget.Button">
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">6pt</item>
+        <item name="android:background">@drawable/buttonshape4</item>
+        <item name="android:height">45dp</item>
+        <item name="android:width">100dp</item>
+        <item name="android:padding">5dp</item>
+        
+        
+    </style>
+    
+    
+    
+    <style name="formsText" parent="@android:style/Widget.TextView">
+        
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">6pt</item>
+        
+        
+        
+        
+    </style>
+    
+    <style name="mainHeading" parent="@android:style/Widget.TextView">
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">6pt</item>
+        
+        
+        
+        
+    </style>
+    
+    <style name="LMRsub" >
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">8pt</item>
+        
+        
+        
+        
+    </style>
+    <style name="txtMainHeading" parent="@android:style/Widget.TextView">
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">8pt</item>
+        
+        
+        
+        
+    </style>
+     <style name="txtMainHeadingLMROverwievSub" parent="@android:style/Widget.TextView">
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">8pt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#FFA500</item>
+        
+        
+        
+    </style>
+    <style name="txtMainHeadingLMROverwievMaterial" parent="@android:style/Widget.TextView">
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">8pt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#70c656</item>
+        
+        
+        
+    </style>
+    <style name="txtGridLMROverwiev" parent="@android:style/Widget.TextView">
+        
+        <item name="android:textColor">#FF00FF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">8pt</item>
+        
+        
+        
+        
+    </style>
+    <style name="txtGridLMROverwiev2" parent="@android:style/Widget.EditText">
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#000000</item>
+        
+        
+        
+        
+        
+    </style>
+    
+    <style name="headingBack" >
+        
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">6pt</item>
+        
+        
+    </style>
+    
+    <style name="LMRlabor" >
+        
+        <item name="android:background">#FFA500</item>
+        
+        
+    </style>
+     <style name="LMRmaterial" >
+        
+        <item name="android:background">#FFA600</item>
+        
+        
+    </style>
+    <style name="LMRmain" >
+        
+        <item name="android:background">#FF0000</item>
+        
+        
+    </style>
+     <style name="LMRfinal" >
+        
+        <item name="android:background">#00FFFF</item>
+        
+        
+    </style>
+    <style name="myScrollView" parent="@android:style/Widget.ScrollView">
+        
+        <item name="android:background">#000000</item>
+     
+    </style>
+    
+</resources>

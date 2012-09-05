@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="txtCustomer">CUSTOMER</string>
+    <string name="txtJobName">JOB NAME</string>
+    <string name="txtJobLocation">JOB LOCATION</string>
+    <string name="txtWorkPerformed">WORK PERFORMED</string>
+    <string name="txtFecProjectManager">FEC PROJECT MANAGER</string>
+    <string name="txtJobNumber">JOB NUMBER</string>
+    <string name="txtCustomerOrderNo">CUSTOMER ORDER NO.</string>
+    <string name="txtBy">BY</string>
+    <string name="txtDate">DATE</string>
+    <string name="txtHeading">FIELD LABOR AND MATERIAL REPORT</string>
+    <string name="txtSubHeading">SPECIALIZED ELECTRICAL SERVICES </string>
+    
+    <string name="txtName">NAME</string>
+    <string name="txtHRS">HRS.</string>
+    <string name="txtRate">RATE</string>
+    <string name="txtAmount">AMOUNT</string>
+    
+    
+</resources>

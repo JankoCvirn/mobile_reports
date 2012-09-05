@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest android:versionCode="1" android:versionName="1.0"
+    package="com.cvirn.ferndaleforms2" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="8"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <application android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" android:theme="@android:style/Theme.Light">
+        <activity android:label="@string/app_name" android:name="Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name="PreferencesActivity"/>
+        <activity android:name="FormMenuActivity"/>
+        <activity android:name="LMRMainActivity"/>
+        <activity android:name=".lmr.LMRSubStep1Activity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.lmr.LMRSubStep2Activity"/>
+        <activity android:name=".material.MaterialActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.material.MaterialSubActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.worker.WorkerActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.worker.WorkerSubActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.equipment.EquipActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.equipment.EquipSubActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.customer.CustomerActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.customer.CustomerSubActivity"/>
+        <provider
+            android:authorities="com.cvirn.ferndaleforms2.dbclasses.workercontentprovider" android:name="com.cvirn.ferndaleforms2.dbclasses.WorkerContentProvider"/>
+        <provider
+            android:authorities="com.cvirn.ferndaleforms2.dbclasses.customercontentprovider" android:name="com.cvirn.ferndaleforms2.dbclasses.CustomerContentProvider"/>
+        <provider
+            android:authorities="com.cvirn.ferndaleforms2.dbclasses.materialcontentprovider" android:name="com.cvirn.ferndaleforms2.dbclasses.MaterialContentProvider"/>
+        <provider
+            android:authorities="com.cvirn.ferndaleforms2.dbclasses.jobcontentprovider" android:name="com.cvirn.ferndaleforms2.dbclasses.JobContentProvider"/>
+        <provider
+            android:authorities="com.cvirn.ferndaleforms2.dbclasses.laborcontentprovider" android:name="com.cvirn.ferndaleforms2.dbclasses.LaborContentProvider"/>
+        <provider
+            android:authorities="com.cvirn.ferndaleforms2.dbclasses.equipcontentprovider" android:name="com.cvirn.ferndaleforms2.dbclasses.EquipContentProvider"/>
+        <provider
+            android:authorities="com.cvirn.ferndaleforms2.dbclasses.subconcontentprovider" android:name="com.cvirn.ferndaleforms2.dbclasses.SubconContentProvider"/>
+        <provider
+            android:authorities="com.cvirn.ferndaleforms2.dbclasses.equiosubcontentprovider" android:name="com.cvirn.ferndaleforms2.dbclasses.EquiosubContentProvider"/>
+        <activity android:name="com.cvirn.ferndaleforms2.location.LocationSubActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.femanager.ManagerActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.femanager.ManagerSubActivity"/>
+        <activity android:name=".location.LocationActivity"/>
+        <activity android:name=".lmr.LMRSubLaborActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.lmr.LMRSubMaterialActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.lmr.LMRSubEquipActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.lmr.LMRModifyActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.lmr.LMROverviewActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.lmr.LMRUploadActivity"/>
+        <activity android:name=".customer.CustomerUpdateActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.equipment.EquipModActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.location.LocationModActivity"/>
+        <activity android:name=".femanager.ManagerModActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.material.MaterialModActivity"/>
+        <activity android:name=".worker.WorkerModActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.lmr.LMROverSubActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.subcontract.SubContActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.subcontract.SubContModActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.subcontract.SubContSubActivity"/>
+        <activity android:name="com.cvirn.ferndaleforms2.lmr.LMRSubContractActivity"/>
+    </application>
+</manifest>

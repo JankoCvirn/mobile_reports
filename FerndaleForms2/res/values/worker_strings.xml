@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btnNew">Add a new worker</string>
+    <string name="btnModify">Modify a worker</string>
+    
+    
+</resources>

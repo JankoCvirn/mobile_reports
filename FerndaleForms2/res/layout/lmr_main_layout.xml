@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/myScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:paddingTop="10dip"
+        android:gravity="center_horizontal"
+        
+        >
+
+        
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+             >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/feclogo" />
+            
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:gravity="center"
+             >
+
+                <Button
+                    android:id="@+id/btnLMRNew"
+                    style="@style/main_buttons2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create a new report" />
+            
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:gravity="center"
+             >
+
+                <Button
+                    android:id="@+id/btnLMRMod"
+                    style="@style/main_buttons2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modify a report" />
+            
+        </TableRow>
+        <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dip" >
+            <Button
+                android:id="@+id/btnLMROverview"
+                style="@style/main_buttons1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report Overview" />
+            </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dip" >
+
+                <Button
+                    android:id="@+id/btnLMRUpload"
+                    style="@style/main_buttons2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload a report" />
+            
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:gravity="center"
+             >
+
+            
+
+                <Button
+                    android:id="@+id/btnLMRHelp"
+                    style="@style/main_buttons3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help" />
+            
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp" >
+            <Button
+                android:id="@+id/btnExit"
+                style="@style/main_buttons3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXIT" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

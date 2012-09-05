@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dip" >
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal" >
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/txtMainHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Select a report:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="14pt" />
+        </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingTop="10dip" >
+                <Button
+                    android:id="@+id/btnLMR"
+                    style="@style/main_buttons4"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtlaborAndMaterials"
+                    android:textSize="6pt" />
+            
+        </TableRow>
+
+        
+
+        
+    </TableLayout>
+
+</ScrollView>

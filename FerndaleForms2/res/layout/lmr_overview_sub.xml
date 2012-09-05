@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/myScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" 
+                android:gravity="center_vertical"
+                
+                >
+                
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dip" >
+        <TableRow
+            android:id="@+id/tableRow1a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+             >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/feclogo" />
+            
+            
+        </TableRow>
+          <TableRow
+              android:id="@+id/tableRow1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:paddingTop="20dp" >
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/txtMainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etxtCustomerLMRMod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtGridLMROverwiev2"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+           
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp" >
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/txtMainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etxtJNameLMRMod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtGridLMROverwiev2"
+                android:ems="10" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp" >
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/txtMainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Location"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etxtJLocLMRMod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtGridLMROverwiev2"
+                android:ems="10" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp" >
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/txtMainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Date"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etxtJDateLMRMod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtGridLMROverwiev2"
+                android:ems="10" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp" >
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/txtMainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="FEC Manager"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <EditText
+                android:id="@+id/etxtFmanLMRMod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtGridLMROverwiev2"
+                android:ems="10" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp" >
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/txtMainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer order Nr."
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etxtCustNrLMRMod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtGridLMROverwiev2"
+                android:ems="10" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp" >
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/txtMainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Performed"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etxtWPerfLMRMod"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                style="@style/txtGridLMROverwiev2"
+                android:ems="10" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+        </TableRow>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/txtMainHeadingLMROverwievSub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="LABOR DETAILS"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:id="@+id/textView12"
+                        style="@style/txtMainHeading"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nr."
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                    <TextView
+                        android:id="@+id/textView13"
+                        style="@style/txtMainHeading"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Worker"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                    <TextView
+                        android:id="@+id/textView14"
+                        style="@style/txtMainHeading"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ST"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                    <TextView
+                        android:id="@+id/textView15"
+                        style="@style/txtMainHeading"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="HT"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                    <TextView
+                        android:id="@+id/textView16"
+                        style="@style/txtMainHeading"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="DT"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout>
+                <GridView
+                    android:id="@+id/gridViewLabor"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:numColumns="1" >
+                </GridView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/txtMainHeadingLMROverwievMaterial"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="MATERIAL DETAILS"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:id="@+id/textView12"
+                        style="@style/txtMainHeading"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nr."
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                    <TextView
+                        android:id="@+id/textView13"
+                        style="@style/txtMainHeading"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Material"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                	<TextView
+                        android:id="@+id/textView16"
+                        style="@style/txtMainHeading"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Amount"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                
+                    
+                    
+                </LinearLayout>
+                <GridView
+                    android:id="@+id/gridViewMaterial"
+                    android:layout_width="fill_parent"
+                    android:layout_height="400dp"
+                    android:layout_weight="0.5"
+                    android:numColumns="1" >
+                </GridView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/txtMainHeadingLMROverwievMaterial"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="EQUIPMENT DETAILS"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:id="@+id/textView12"
+                        style="@style/txtMainHeading"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nr."
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                    <TextView
+                        android:id="@+id/textView13"
+                        style="@style/txtMainHeading"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Eqiupment"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                	<TextView
+                        android:id="@+id/textView16"
+                        style="@style/txtMainHeading"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Amount"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                
+                    
+                    
+                </LinearLayout>
+                
+            
+            <GridView
+                android:id="@+id/gridViewEquip"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:numColumns="1" >
+            </GridView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/txtMainHeadingLMROverwievSub"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBCONTRACTOR DETAILS"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:id="@+id/textView12"
+                        style="@style/txtMainHeading"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nr."
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                    <TextView
+                        android:id="@+id/textView13"
+                        style="@style/txtMainHeading"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="SubContractor"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                	<TextView
+                        android:id="@+id/textView16"
+                        style="@style/txtMainHeading"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Amount"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                
+                    
+                    
+                </LinearLayout>
+                
+            
+            <GridView
+                android:id="@+id/gridViewSubCon"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:numColumns="1" >
+            </GridView>
+        </LinearLayout>
+    </LinearLayout>
+    </TableLayout>
+    
+    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" 
+                android:gravity="center"
+                
+                >
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/txtMainHeadingLMROverwievSub"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="CUSTOMER SIGNATURE"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <android.gesture.GestureOverlayView
+            android:id="@+id/signature"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:background="@color/mainbutton" >
+        </android.gesture.GestureOverlayView>
+        <Button
+            android:id="@+id/btnConfirm"
+            style="@style/main_buttons3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm" />
+    </LinearLayout>
+    
+ </LinearLayout>
+</ScrollView>

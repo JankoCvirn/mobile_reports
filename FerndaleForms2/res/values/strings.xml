@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World</string>
+    <string name="app_name">Ferndale eReports</string>
+    <string name="company">Ferndale Electric</string>
+    <string name="prefPassword">Your password</string>
+    <string name="prefUsernameSummary">Enter your username</string>
+    <string name="txtUsername">Username</string>
+    <string name="txtVersion">Version Beta</string>
+    <string name="txtPassword">Password</string>
+    <string name="prefPasswordSummary">Enter your password</string>
+    <string name="prefUsername">Your username</string>
+    <string name="feature_5">Equipement</string>
+    <string name="feature_6">Reports</string>
+    <string name="feature_1">User</string>
+    <string name="feature_2">Customer</string>
+    <string name="feature_3">Worker</string>
+    <string name="feature_4">Materials</string>
+    <string name="txtlaborAndMaterials">Field Labor and Material Report</string>
+    <string name="menuItem1">Item 1</string>
+    <string name="menuItem3">Item 3</string>
+    <string name="menuItem2">Item 2</string>
+    <string name="menuItem5">Item 5</string>
+    <string name="menuItem4">Item 4</string>
+    <string name="actionBarTitle">Action Bar Title</string>
+    <string name="actionBarSubtitle">Action Bar Subtitle</string>
+    <string name="btnNewWorker">Add a new worker</string>
+    <string name="btnModifyWorker">Modify a worker</string>
+    <string name="descFecLogo">Ferndale Logo Image</string>
+    <string name="enterNewLMR">OR ENTER NEW</string>
+</resources>

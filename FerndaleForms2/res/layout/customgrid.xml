@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+<TableLayout android:id="@+id/TableLayout01"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+              android:orientation="vertical"
+              android:gravity="left"
+              >
+       <TableRow android:id="@+id/TableRow01"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:gravity="left"
+                  >
+        
+       <!--  <TextView  android:text="@string/hello"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   
+                   android:id="@+id/txtId"
+                   style="@style/txtGridLMROverwiev"
+                  android:gravity="left" /> -->
+        <EditText
+            android:id="@+id/txtId"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            style="@style/txtGridLMROverwiev2"
+            android:gravity="left"
+            android:enabled="false"
+             >
+            <requestFocus />
+        </EditText>
+       </TableRow>
+</TableLayout>
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#000000" >
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dip" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+             >
+
+           
+            
+            
+        </TableRow>
+		<TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+             >
+            <TextView
+                android:id="@+id/txtPrefs"
+                style="@style/txtMainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add a new worker"
+                android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            
+            android:paddingTop="10dip" >
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/txtMainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <EditText
+                android:id="@+id/etxtWorkerFname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="First name"
+                android:inputType="text|textCapWords"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+             
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            
+             >
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/txtMainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <EditText
+                android:id="@+id/etxtWorkerLName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Last name"
+                android:inputType="text|textCapWords"
+                android:ems="10" />
+             
+        </TableRow>
+                <TableRow
+            android:id="@+id/tableRow5"
+            style="@style/txtMainHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingTop="10dip" >
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/txtMainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proffession"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etxtWorkerProf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text|textCapWords"
+                android:hint="Proffesssion" >
+                
+            </EditText>
+             
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            
+            android:paddingTop="10dip" >
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/txtMainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:inputType="text|textCapWords"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <EditText
+                android:id="@+id/etxtWorkerNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Notes"
+                android:ems="10" >
+
+                
+            </EditText>
+             
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingTop="10dip" >
+
+            <Button
+                android:id="@+id/btnCreateNewWorker"
+                style="@style/main_buttons2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/btnClearWorkerData"
+                style="@style/main_buttons1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear" />
+             
+        </TableRow>
+
+        
+
+        
+    </TableLayout>
+ 
+</ScrollView>
