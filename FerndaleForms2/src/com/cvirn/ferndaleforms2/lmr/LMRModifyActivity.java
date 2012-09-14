@@ -29,6 +29,7 @@ public class LMRModifyActivity extends Activity {
 	private Button btnLMRUpdateSubCon;
 	private EditText etxtLMRUpdateSubAm;
 	private Spinner spinnerLMRSubConEdit;
+	
 	private Button btnLMRModAdd;
 	private Button btnLMRDeleteEquip;
 	private Button btnLMRUpdateEquip;
@@ -36,16 +37,20 @@ public class LMRModifyActivity extends Activity {
 	private Button btnLMRUpdateMaterial;
 	private Button btnLMRDeleteLabor;
 	private Button btnLMRUpdateLabor;
+	
 	private EditText etxtLMRUpdateEuipAm;
 	private EditText etxtLMRmaterialAmountUpdate;
 	private EditText etxtDTime;
 	private EditText etxtHTime;
 	private EditText etxtSTime;
+	
 	private Spinner spinnerLMREquipEdit;
 	private Spinner spinnerLMRMaterialEdit;
 	private Spinner spinnerLMRLaborEdit;
+	
 	private Button btnDeleteLMR;
 	private Button btnChangeLMR;
+	
 	private EditText etxtWPerfLMRMod;
 	private EditText etxtCustNrLMRMod;
 	private EditText etxtFmanLMRMod;
@@ -476,6 +481,7 @@ public class LMRModifyActivity extends Activity {
 		SimpleCursorAdapter eqAdapter = new SimpleCursorAdapter(this,
 				R.layout.db_view_row, eqCursor, from3, to3);
 		this.spinnerLMREquipEdit.setAdapter(eqAdapter);
+		
 		//Spinner for Subcont
 		Cursor scCursor;
 		scCursor = this.getSunContr();

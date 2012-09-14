@@ -51,22 +51,24 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CUSTOMER"
             style="@style/LMRsub"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="CUSTOMER"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <Spinner
             android:id="@+id/spinnerCustomer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="wrap_content"
+            style="@style/LMRsub"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="JOB NUMBER"
-            style="@style/LMRsub"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
@@ -79,10 +81,10 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            style="@style/LMRsub"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="JOB NAME"
-            style="@style/LMRsub"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
@@ -95,10 +97,10 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+            style="@style/LMRsub"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="JOB LOCATION"
-            style="@style/LMRsub"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <Spinner
@@ -108,10 +110,10 @@
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="wrap_content"
+            style="@style/LMRsub"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="DATE"
-            style="@style/LMRsub"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <DatePicker
@@ -121,10 +123,10 @@
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="wrap_content"
+            style="@style/LMRsub"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="FEC PROJECT MANAGER"
-            style="@style/LMRsub"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <Spinner
@@ -134,10 +136,10 @@
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="wrap_content"
+            style="@style/LMRsub"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="CUSTOMER ORDER NO."
-            style="@style/LMRsub"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
@@ -150,10 +152,10 @@
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="wrap_content"
+            style="@style/LMRsub"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="WORK PERFORMED"
-            style="@style/LMRsub"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
@@ -162,12 +164,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="18.34"
             android:ems="20"
-            android:inputType="text|textCapWords"
+            android:inputType="textMultiLine|textCapWords"
             android:hint="work details" />
 
     </LinearLayout>
 
     <!-- worker,mat,eqip  -->
+
+    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

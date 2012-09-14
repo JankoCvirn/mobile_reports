@@ -21,13 +21,13 @@ import com.cvirn.ferndaleforms2.dbhelper.DbHelper;
 /**
  * @author janko
  * @param <E>
- *
+ * 
  */
 public class DataAdapterSubContr extends BaseAdapter{
 
 	Context mContext;
 	private LayoutInflater mInflater;
-	static final String MAT="LMRMATERIAL";
+	//static final String MAT="LMRMATERIAL";
 	private ArrayList<String> id;
 	private ArrayList<String> name;
 	private ArrayList<String> amount;
@@ -124,7 +124,7 @@ public class DataAdapterSubContr extends BaseAdapter{
 	  this.amount=new ArrayList<String>();
 	  
 	  
-	  Log.d("DataAdapterLabor", "start reading db");
+	  Log.d("DataAdapterSubCon", "start reading db");
 		SQLiteDatabase d=this.db.getReadableDatabase();
 		
 		String[] params= {this.jobnumber};

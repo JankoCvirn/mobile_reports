@@ -20,7 +20,7 @@ public class LMRSubContractActivity extends Activity {
 	private GridView gridViewEquip;
 	private GridView gridViewMaterial;
 	private GridView gridViewLabor;
-	private Button btnCreateEquip;
+	private Button btnCreateSubCon;
 	private EditText etxtAmount;
 	private EditText etxtSubCont;
 	private Spinner spinnerLMRSubCont;
@@ -40,11 +40,11 @@ public class LMRSubContractActivity extends Activity {
 		this.gridViewEquip = (GridView) findViewById(R.id.gridViewEquip);
 		this.gridViewMaterial = (GridView) findViewById(R.id.gridViewMaterial);
 		this.gridViewLabor = (GridView) findViewById(R.id.gridViewLabor);
-		this.btnCreateEquip = (Button) findViewById(R.id.btnCreateEquip);
+		this.btnCreateSubCon = (Button) findViewById(R.id.btnCreateSubCon);
 		this.etxtAmount = (EditText) findViewById(R.id.etxtAmount);
 		this.etxtSubCont = (EditText) findViewById(R.id.etxtSubCont);
 		this.spinnerLMRSubCont = (Spinner) findViewById(R.id.spinnerLMRSubCont);
-		this.gridViewLMRSubCon = (GridView) findViewById(R.id.gridViewLMRSubCon);
+		//this.gridViewLMRSubCon = (GridView) findViewById(R.id.gridViewLMRSubCon);
 		i=getIntent();
 		jobnumber=i.getStringExtra(LMReport.LMR_JobNumber);
 		
@@ -54,9 +54,21 @@ public class LMRSubContractActivity extends Activity {
 		gridViewEquip.setAdapter(new DataAdapterEquip(this,jobnumber));
 		gridViewSubCon.setAdapter(new DataAdapterSubContr(this, jobnumber));
 		
-		gridViewLMRSubCon.setAdapter(new DataAdapterSubContr(this,jobnumber));
+		//gridViewLMRSubCon.setAdapter(new DataAdapterSubContr(this,jobnumber));
+		//Populate spinner subcontr
+		Cursor eCursor;
+		eCursor = this.getSubCon();
+		startManagingCursor(eCursor);
+		String[] from = new String[] { "name" };
+		int[] to = new int[] { R.id.tvDBViewRow };
+
+		SimpleCursorAdapter nameAdapter = new SimpleCursorAdapter(this,
+				R.layout.db_view_row, eCursor, from, to);
+		this.spinnerLMRSubCont.setAdapter(nameAdapter);
 		
-		this.btnCreateEquip.setOnClickListener(new View.OnClickListener() {
+		
+		/////////////////////////////
+		this.btnCreateSubCon.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View target) {
 				
 				doSaveToDB();
