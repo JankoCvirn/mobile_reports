@@ -11,34 +11,39 @@
         android:gravity="center_horizontal"
         android:paddingTop="10dip" >
 
+        <TextView
+            android:id="@+id/txtPrefs"
+            style="@style/txtMainHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add a new Customer:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="14pt" />
+
 		<TableRow
             android:id="@+id/tableRow2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
              >
-            <TextView
-                android:id="@+id/txtPrefs"
-                style="@style/txtMainHeading"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Add a new customer"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+
         </TableRow>
+
         <TableRow
             android:id="@+id/tableRow3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
+            android:gravity="left"
             android:orientation="vertical"
-            android:paddingTop="10dip" >
+            android:paddingTop="50dp" >
+
             <TextView
                 android:id="@+id/textView2"
                 style="@style/txtMainHeading"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="Name:"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <EditText
                 android:id="@+id/etxtCustomerName"
@@ -66,7 +71,7 @@
                 style="@style/txtMainHeading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Street"
+                android:text="Street and  No. :"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <EditText
                 android:id="@+id/etxtCustomerStreet"
@@ -91,7 +96,7 @@
                 style="@style/txtMainHeading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="City"
+                android:text="City :"
                 android:textAppearance="?android:attr/textAppearanceLarge" 
                 
                 />
@@ -120,7 +125,7 @@
                 style="@style/txtMainHeading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="State"
+                android:text="State :"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <EditText
                 android:id="@+id/etxtCustomerState"
@@ -167,12 +172,7 @@
             android:layout_gravity="right"
             android:paddingTop="10dip" >
 
-            <Button
-                android:id="@+id/btnCreateNewCustomer"
-                style="@style/main_buttons2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Save" />
+            
 
             <Button
                 android:id="@+id/btnClearCustomerData"
@@ -180,6 +180,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Clear" />
+            <Button
+                android:id="@+id/btnCreateNewCustomer"
+                style="@style/main_buttons2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save" />
              
         </TableRow>
 
