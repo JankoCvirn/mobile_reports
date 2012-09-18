@@ -40,7 +40,7 @@ public class LMRSubEquipActivity extends Activity {
 		//2340009-1510502224  3224699856
 		setContentView(R.layout.lmr_sub_euipment_layout);
 		this.gridViewSubCon = (GridView) findViewById(R.id.gridViewSubCon);
-		this.gridViewEquip = (GridView) findViewById(R.id.gridViewEquip);
+		//this.gridViewEquip = (GridView) findViewById(R.id.gridViewEquip);
 		this.gridViewMaterial = (GridView) findViewById(R.id.gridViewMaterial);
 		this.gridViewLabor = (GridView) findViewById(R.id.gridViewLabor);
 		this.btnCreateEquip = (Button) findViewById(R.id.btnCreateEquip);
@@ -59,7 +59,7 @@ public class LMRSubEquipActivity extends Activity {
 		//db.copyDatabaseFile();
 		gridViewLabor.setAdapter(new DataAdapterLabor(this,jobnumber));
 		gridViewMaterial.setAdapter(new DataAdapterMaterial(this,jobnumber));
-		gridViewEquip.setAdapter(new DataAdapterEquip(this,jobnumber));
+		//gridViewEquip.setAdapter(new DataAdapterEquip(this,jobnumber));
 		gridViewSubCon.setAdapter(new DataAdapterSubContr(this, jobnumber));
 		
 		

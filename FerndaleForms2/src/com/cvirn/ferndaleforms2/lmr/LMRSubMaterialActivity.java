@@ -43,7 +43,7 @@ public class LMRSubMaterialActivity extends Activity {
 		setContentView(R.layout.lmr_sub_material_layout);
 		this.gridViewSubCon = (GridView) findViewById(R.id.gridViewSubCon);
 		this.gridViewEquip = (GridView) findViewById(R.id.gridViewEquip);
-		this.gridViewMaterial = (GridView) findViewById(R.id.gridViewMaterial);
+		//this.gridViewMaterial = (GridView) findViewById(R.id.gridViewMaterial);
 		this.gridViewLabor = (GridView) findViewById(R.id.gridViewLabor);
 		this.editText2 = (EditText) findViewById(R.id.editText2);
 		this.btnCreateMaterial = (Button) findViewById(R.id.btnCreateMaterial);
@@ -55,7 +55,7 @@ public class LMRSubMaterialActivity extends Activity {
 		
 		db = new DbHelper(this, true);
 		gridViewLabor.setAdapter(new DataAdapterLabor(this,jobnumber));
-		gridViewMaterial.setAdapter(new DataAdapterMaterial(this,jobnumber));
+		//gridViewMaterial.setAdapter(new DataAdapterMaterial(this,jobnumber));
 		gridViewEquip.setAdapter(new DataAdapterEquip(this,jobnumber));
 		gridViewSubCon.setAdapter(new DataAdapterSubContr(this, jobnumber));
 		

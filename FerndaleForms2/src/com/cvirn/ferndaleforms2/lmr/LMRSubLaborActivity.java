@@ -40,7 +40,7 @@ public class LMRSubLaborActivity extends Activity {
 		this.gridViewSubCon = (GridView) findViewById(R.id.gridViewSubCon);
 		this.gridViewEquip = (GridView) findViewById(R.id.gridViewEquip);
 		this.gridViewMaterial = (GridView) findViewById(R.id.gridViewMaterial);
-		this.gridViewLabor = (GridView) findViewById(R.id.gridViewLabor);
+		//this.gridViewLabor = (GridView) findViewById(R.id.gridViewLabor);
 		GridView gridview = (GridView) findViewById(R.id.gridView1);  
 	       
 		
@@ -56,7 +56,7 @@ public class LMRSubLaborActivity extends Activity {
 
 		db = new DbHelper(this, true);
 		//db.copyDatabaseFile();
-		gridViewLabor.setAdapter(new DataAdapterLabor(this,jobnumber));
+		//gridViewLabor.setAdapter(new DataAdapterLabor(this,jobnumber));
 		gridViewMaterial.setAdapter(new DataAdapterMaterial(this,jobnumber));
 		gridViewEquip.setAdapter(new DataAdapterEquip(this,jobnumber));
 		gridViewSubCon.setAdapter(new DataAdapterSubContr(this, jobnumber));
