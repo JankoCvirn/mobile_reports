@@ -85,6 +85,7 @@ public class LMROverSubActivity extends Activity {
 			public void onGesturePerformed(GestureOverlayView overlay, Gesture gesture) {
 				sig_image=gesture.toBitmap(300, 150, 1, 1);
 				
+				
 			       
 			}
 		});
