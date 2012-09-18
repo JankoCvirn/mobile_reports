@@ -64,14 +64,17 @@
                 android:layout_weight="0.5"
                 android:gravity="center"
                 android:orientation="vertical" >
+
                 <TextView
                     android:id="@+id/textView2"
                     style="@style/txtMainHeadingLMROverwievMaterial"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:background="#FFA500"
                     android:paddingTop="5dp"
                     android:text="MATERIAL DETAILS"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
+
                 <GridView
                     android:id="@+id/gridViewMaterial"
                     android:layout_width="600dp"
@@ -93,13 +96,16 @@
             android:layout_weight="0.5"
             android:gravity="center"
             android:orientation="vertical" >
+
             <TextView
                 android:id="@+id/textView10"
                 style="@style/txtMainHeadingLMROverwievMaterial"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#FFA500"
                 android:text="EQUIPMENT DETAILS"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
             <GridView
                 android:id="@+id/gridViewEquip"
                 android:layout_width="600dp"
@@ -136,17 +142,19 @@
         android:orientation="vertical" 
         android:gravity="center"
         >
+
         <TextView
             android:id="@+id/textView1"
             style="@style/txtMainHeadingLMROverwievSub"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center|center_horizontal"
-           
             android:layout_marginTop="5dp"
+            android:background="#70c656"
             android:gravity="center_horizontal"
             android:text="FIELD LABOR AND MATERIALS REPORT - Labor details"
             android:textAppearance="?android:attr/textAppearanceLarge" />
+
     </LinearLayout>
     <!-- MainField Buttons -->
     

@@ -202,7 +202,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
         <Spinner
             android:id="@+id/spinnerLMRSubEQ"
-            android:layout_width="400dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout android:layout_width="match_parent"
@@ -220,7 +220,7 @@
         <EditText
             android:id="@+id/editText2"
             style="etxtNewEquip"
-            android:layout_width="400dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="enter new equipment" 
@@ -243,7 +243,7 @@
 
         <EditText
             android:id="@+id/editText1"
-            android:layout_width="400dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="amount of hours"

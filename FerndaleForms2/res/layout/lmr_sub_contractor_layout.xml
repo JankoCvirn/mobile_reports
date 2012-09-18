@@ -194,7 +194,7 @@
          
         <Spinner
             android:id="@+id/spinnerLMRSubCont"
-            android:layout_width="400dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout android:layout_width="match_parent"
@@ -214,7 +214,7 @@
         <EditText
             android:id="@+id/etxtSubCont"
             style="etxtNewEquip"
-            android:layout_width="400dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="enter new subcontractor" 
@@ -240,7 +240,7 @@
 
         <EditText
             android:id="@+id/etxtAmount"
-            android:layout_width="400dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="amount of hours"
