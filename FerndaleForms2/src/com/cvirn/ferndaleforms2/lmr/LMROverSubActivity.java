@@ -1,11 +1,14 @@
 package com.cvirn.ferndaleforms2.lmr;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.OutputStream;
 
 import com.cvirn.ferndaleforms2.R;
 import com.cvirn.ferndaleforms2.constants.LMReport;
 import com.cvirn.ferndaleforms2.dbhelper.DbHelper;
+import com.cvirn.ferndaleforms2.signature.SignatureCapture;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,9 +18,12 @@ import android.gesture.Gesture;
 import android.gesture.GestureOverlayView;
 import android.gesture.GestureOverlayView.OnGesturePerformedListener;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.app.*;
+import android.os.Environment;
+
 import android.widget.*;
+import android.util.Log;
 import android.view.*;
 
 public class LMROverSubActivity extends Activity {
@@ -58,7 +64,7 @@ public class LMROverSubActivity extends Activity {
 		this.etxtJLocLMRMod = (EditText) findViewById(R.id.etxtJLocLMRMod);
 		this.etxtJNameLMRMod = (EditText) findViewById(R.id.etxtJNameLMRMod);
 		this.etxtCustomerLMRMod = (EditText) findViewById(R.id.etxtCustomerLMRMod);
-		this.signature=(GestureOverlayView)findViewById(R.id.signature);
+		//this.signature=(GestureOverlayView)findViewById(R.id.signature);
 		db = new DbHelper(this, true);
 		
 		
@@ -79,21 +85,14 @@ public class LMROverSubActivity extends Activity {
 		gridViewEquip.setAdapter(new DataAdapterEquip(this,jobnumber));
 		gridViewSubCon.setAdapter(new DataAdapterSubContr(this, jobnumber));
 		
-		this.signature.addOnGesturePerformedListener(new OnGesturePerformedListener() {
-			
-			@Override
-			public void onGesturePerformed(GestureOverlayView overlay, Gesture gesture) {
-				sig_image=gesture.toBitmap(300, 150, 1, 1);
-				
-				
-			       
-			}
-		});
+		
 		
 		this.btnConfirm.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View target) {
 				
-				doSignatureSave();
+				Intent lmr_sub2=new Intent(getApplicationContext(),SignatureCapture.class);
+				lmr_sub2.putExtra(LMReport.LMR_JobNumber, jobnumber);
+				startActivity(lmr_sub2);
 			}
 		});
 		
@@ -137,4 +136,7 @@ private void doSignatureSave() {
 	}
 	
 }
+
+
+
 }

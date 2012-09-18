@@ -433,19 +433,6 @@
                 android:gravity="center"
                 
                 >
-        <TextView
-            android:id="@+id/textView11"
-            style="@style/txtMainHeadingLMROverwievSub"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="CUSTOMER SIGNATURE"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-        <android.gesture.GestureOverlayView
-            android:id="@+id/signature"
-            android:layout_width="fill_parent"
-            android:layout_height="200dp"
-            android:background="@color/mainbutton" >
-        </android.gesture.GestureOverlayView>
         <Button
             android:id="@+id/btnConfirm"
             style="@style/main_buttons3"
