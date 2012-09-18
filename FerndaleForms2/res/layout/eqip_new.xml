@@ -11,21 +11,23 @@
         android:gravity="center_horizontal"
         android:paddingTop="10dip" >
 
+        <TextView
+            android:id="@+id/txtPrefs"
+            style="@style/txtMainHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add new equipment"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16pt" />
+
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
              >
-			<TextView
-			    android:id="@+id/txtPrefs"
-			    style="@style/txtMainHeading"
-			    android:layout_width="wrap_content"
-			    android:layout_height="wrap_content"
-			    android:gravity="center"
-			    android:text="Add new equipment"
-			    android:textAppearance="?android:attr/textAppearanceLarge"
-			     />
+
         </TableRow>
 
         <TableRow
@@ -34,13 +36,15 @@
             android:layout_height="wrap_content"
            android:gravity="center_horizontal"
             android:paddingTop="10dip" >
+
             <TextView
                 android:id="@+id/textView5"
                 style="@style/txtMainHeading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="Equipment Name:"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
             <EditText
                 android:id="@+id/etxtEquipName"
                 android:layout_width="wrap_content"
@@ -60,19 +64,21 @@
             android:gravity="center_horizontal"
             android:paddingTop="10dip" >
 
-            <Button
-                android:id="@+id/btnCreateNewEquip"
-                style="@style/main_buttons2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Save" />
-
+            
             <Button
                 android:id="@+id/btnClearEqipData"
                 style="@style/main_buttons1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Clear" />
+            
+            <Button
+                android:id="@+id/btnCreateNewEquip"
+                style="@style/main_buttons2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Save" />
              
         </TableRow>
 

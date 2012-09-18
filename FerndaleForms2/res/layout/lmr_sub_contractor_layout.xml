@@ -58,7 +58,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge" />
                 <GridView
                     android:id="@+id/gridViewLabor"
-                    android:layout_width="300dp"
+                    android:layout_width="600dp"
                     android:layout_height="wrap_content"
                     android:numColumns="1" >
                 </GridView>
@@ -68,19 +68,23 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical" >
+
                 <TextView
                     android:id="@+id/textView2"
                     style="@style/txtMainHeadingLMROverwievMaterial"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:background="#FFA500"
                     android:paddingTop="5dp"
                     android:text="MATERIAL DETAILS"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
+
                 <GridView
                     android:id="@+id/gridViewMaterial"
-                    android:layout_width="300dp"
+                    android:layout_width="600dp"
                     android:layout_height="wrap_content"
                     android:numColumns="1" >
+
                 </GridView>
             </LinearLayout>
         </LinearLayout>
@@ -102,11 +106,13 @@
                 style="@style/txtMainHeadingLMROverwievMaterial"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#FFA500"
                 android:text="EQUIPMENT DETAILS"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
             <GridView
                 android:id="@+id/gridViewEquip"
-                android:layout_width="300dp"
+                android:layout_width="600dp"
                 android:layout_height="wrap_content"
                 android:numColumns="1" >
             </GridView>
@@ -116,16 +122,19 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical" >
+
             <TextView
                 android:id="@+id/textView10"
                 style="@style/txtMainHeadingLMROverwievSub"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#70c656"
                 android:text="SUBCONTRACTOR DETAILS"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
             <GridView
                 android:id="@+id/gridViewSubCon"
-                android:layout_width="300dp"
+                android:layout_width="600dp"
                 android:layout_height="wrap_content"
                 android:numColumns="1" >
             </GridView>
@@ -168,74 +177,90 @@
         android:gravity="center"
         android:orientation="vertical" 
         android:padding="20dp">
-
+		<LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
         <TextView
             android:id="@+id/textView2"
             style="@style/txtMainHeading"
-            android:layout_width="fill_parent"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Select subcontractor"
             android:textAppearance="?android:attr/textAppearanceLarge" 
-            android:gravity="center"
+            
             />
+         
         <Spinner
             android:id="@+id/spinnerLMRSubCont"
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
         <TextView
             android:id="@+id/textView4"
             style="@style/txtMainHeading"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="OR ENTER NEW" 
-            android:gravity="center"
+            
             />
-
+		
         <EditText
             android:id="@+id/etxtSubCont"
             style="etxtNewEquip"
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="enter new subcontractor" 
             android:inputType="text|textCapWords"
             android:gravity="center"
             />
-
+		</LinearLayout>
+		<LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
         <TextView
             android:id="@+id/textView3"
             style="@style/txtMainHeading"
-            android:layout_width="fill_parent"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:hint="amount of hours"
             android:text="Hours"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:gravity="center"
+            
              />
 
         <EditText
             android:id="@+id/etxtAmount"
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="amount of hours"
             android:inputType="number|numberDecimal" >
 
-            <requestFocus />
+            
         </EditText>
-
+		</LinearLayout>
         
 
     </LinearLayout>
 
-   
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" 
         android:gravity="center"
-        android:paddingTop="20dp"
-        >
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="20dp" >
+
         <Button
             android:id="@+id/btnCreateSubCon"
             style="@style/main_buttons2"

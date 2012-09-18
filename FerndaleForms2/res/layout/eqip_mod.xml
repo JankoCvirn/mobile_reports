@@ -11,19 +11,32 @@
         android:gravity="center_horizontal"
         android:paddingTop="10dip" >
 
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/txtMainHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            
+            android:text="Modify Equipment"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16pt" />
+
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-             >
+            android:padding="25dp" >
+
 			<TextView
 			    android:id="@+id/TextView01"
 			    style="@style/txtMainHeading"
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
-			    android:text="Select"
+			    android:text="Select Equipment:"
 			    android:textAppearance="?android:attr/textAppearanceLarge" />
+
 			<Spinner
 			    android:id="@+id/spinnerEquipMod"
 			    android:layout_width="wrap_content"
@@ -34,15 +47,17 @@
             android:id="@+id/tableRow6"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-           android:gravity="center_horizontal"
-            android:paddingTop="10dip" >
+            android:gravity="center_horizontal"
+            android:padding="25dp" >
+
             <TextView
                 android:id="@+id/textView5"
                 style="@style/txtMainHeading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="Equipment Name:"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
             <EditText
                 android:id="@+id/etxtModEquipName"
                 android:layout_width="wrap_content"
