@@ -1,7 +1,6 @@
 package com.cvirn.ferndaleforms2.lmr;
 
 import java.util.ArrayList;
-import java.util.prefs.Preferences;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -19,7 +18,6 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.cvirn.ferndaleforms2.R;
 import com.cvirn.ferndaleforms2.bean.LMREquipmentBean;
@@ -258,6 +256,8 @@ class PostToCloud extends AsyncTask<String, String, String>{
 			Log.d("POST","POST eq result="+e);
 			
 		}
+		//Signature upload
+		client.DoFileUpload(job.getJobnumber());
 		
 		return result;
 	}
