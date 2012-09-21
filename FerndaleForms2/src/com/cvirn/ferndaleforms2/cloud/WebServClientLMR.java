@@ -466,7 +466,7 @@ public String DoFileUpload (String job_id) {
 		//DataInputStream inputStream = null;
 
 		//TODO add webservice for upload
-		String urlServer = "http://http://108.179.218.75/service_signature.php";
+		String urlServer = "http://108.179.218.75/signature/upload.php";
 		String lineEnd = "\r\n";
 		String twoHyphens = "--";
 		String boundary =  "*****";
