@@ -24,6 +24,7 @@ import com.cvirn.ferndaleforms2.bean.LMREquipmentBean;
 import com.cvirn.ferndaleforms2.bean.LMRJobBean;
 import com.cvirn.ferndaleforms2.bean.LMRLaborBean;
 import com.cvirn.ferndaleforms2.bean.LMRMaterialBean;
+import com.cvirn.ferndaleforms2.bean.LMRSubConBean;
 import com.cvirn.ferndaleforms2.cloud.WebServClientLMR;
 import com.cvirn.ferndaleforms2.dbhelper.DbHelper;
 
@@ -37,6 +38,7 @@ public class LMRUploadActivity extends Activity {
 	private ArrayList<LMRMaterialBean> mat_holder;
 	private ArrayList<LMRLaborBean> lab_holder;
 	private ArrayList<LMREquipmentBean> eqp_holder;
+	private ArrayList<LMRSubConBean> sub_holder;
 	SharedPreferences sp;
 	/**
 	 * @see android.app.Activity#onCreate(Bundle)
@@ -217,15 +219,43 @@ private void doUpload() {
 		
 	d.close();
 	}
+	//////////////////////////////////////////////
+	//SubContractor
+	d=this.db.getReadableDatabase();
+	sql="SELECT * FROM LMRSUBCONTR WHERE jobnr=?";
+	c=d.rawQuery(sql, params);
+	sub_holder=new ArrayList<LMRSubConBean>();
+	
+	if(c.moveToFirst()) {
+	
+		LMRSubConBean sbean=new LMRSubConBean();
+		sbean.setName(c.getString(2));
+		sbean.setAmmount(c.getString(3));
+		sub_holder.add(sbean);
+	
+		while (c.moveToNext()) {
+			sbean.setName(c.getString(2));
+			sbean.setAmmount(c.getString(3));
+			sub_holder.add(sbean);
+			
+			
+			
+		}
+	
+		
+	d.close();
+	}
+	
+	///////////////////////////////////////////
 	new PostToCloud().execute("");
 	///////////////////////////////////////////
 	//new PostEqpToCloud().execute("");
 	//new PostLaborToCloud().execute("");
 	//new PostMatToCloud().execute("");
 	
-	Log.d("UPLOAD Activity","Lab_holder size:"+lab_holder.size());
-	Log.d("UPLOAD Activity","Mat_holder size:"+mat_holder.size());
-	Log.d("UPLOAD Activity","Equip_holder size:"+eqp_holder.size());
+	//Log.d("UPLOAD Activity","Lab_holder size:"+lab_holder.size());
+	//Log.d("UPLOAD Activity","Mat_holder size:"+mat_holder.size());
+	//Log.d("UPLOAD Activity","Equip_holder size:"+eqp_holder.size());
 }
 
 class PostToCloud extends AsyncTask<String, String, String>{
@@ -237,23 +267,32 @@ class PostToCloud extends AsyncTask<String, String, String>{
 		client.setPassword(sp.getString("password", ""));
 		client.setJobbean(job);
 		String result=client.getPostNewReport();
-		Log.d("POST","POST job");
-		
+		//Log.d("POST","POST job");
+		//Labor upload
 		for (int i=0;i<lab_holder.size();i++) {
 			client.setLabor_bean(lab_holder.get(i));
 			String l=client.getPostReportDetailsLabor();
-			Log.d("POST","POST Labor result:"+l);
+			//Log.d("POST","POST Labor result:"+l);
 		}
+		//Material upload
 		for (int i=0;i<mat_holder.size();i++) {
 			client.setMat_bean(mat_holder.get(i));
 			String m=client.getPostReportDetailsMat();
-			Log.d("POST","POST mat result:"+m);
+			//Log.d("POST","POST mat result:"+m);
 			
 		}
+		//Equipment upload
 		for (int i=0;i<eqp_holder.size();i++) {
 			client.setEquip_bean(eqp_holder.get(i));
 			String e=client.getPostReportDetailsEquip();
-			Log.d("POST","POST eq result="+e);
+			//Log.d("POST","POST eq result="+e);
+			
+		}
+		//SubContractor upload
+		for (int i=0;i<sub_holder.size();i++) {
+			client.setSub_bean(sub_holder.get(i));
+			String s=client.getPostReportDetailsSubCon();
+			//Log.d("POST","POST eq result="+e);
 			
 		}
 		//Signature upload

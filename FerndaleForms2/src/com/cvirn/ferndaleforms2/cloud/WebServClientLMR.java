@@ -37,6 +37,7 @@ import com.cvirn.ferndaleforms2.bean.LMREquipmentBean;
 import com.cvirn.ferndaleforms2.bean.LMRJobBean;
 import com.cvirn.ferndaleforms2.bean.LMRLaborBean;
 import com.cvirn.ferndaleforms2.bean.LMRMaterialBean;
+import com.cvirn.ferndaleforms2.bean.LMRSubConBean;
 import com.cvirn.ferndaleforms2.constants.LMReport;
 
 import android.os.Environment;
@@ -61,6 +62,7 @@ public class WebServClientLMR implements Serializable {
 	protected LMRMaterialBean mat_bean;
 	protected LMRLaborBean labor_bean;
 	protected LMREquipmentBean equip_bean;
+	protected LMRSubConBean sub_bean;
 	
 	final static String[] actions= {"setLMRJob","setLMRLabor","setLMRMat","setLMREqu","setLMRSub"};
 	
@@ -85,6 +87,14 @@ public class WebServClientLMR implements Serializable {
 	
 	
 	
+	public LMRSubConBean getSub_bean() {
+		return sub_bean;
+	}
+
+	public void setSub_bean(LMRSubConBean sub_bean) {
+		this.sub_bean = sub_bean;
+	}
+
 	public LMRMaterialBean getMat_bean() {
 		return mat_bean;
 	}
@@ -389,6 +399,58 @@ public class WebServClientLMR implements Serializable {
 			pairs.add(new BasicNameValuePair(parameters_job[2], getJobbean().getJobnumber()));
 			pairs.add(new BasicNameValuePair(parameters_equip[0], getEquip_bean().getName()));
 			pairs.add(new BasicNameValuePair(parameters_equip[1], getEquip_bean().getAmmount()));
+			
+			
+			//TODO add other parameters
+			httppost.setEntity(new UrlEncodedFormEntity(pairs));
+
+			// Finally, execute the request
+			HttpResponse webServerAnswer = httpclient.execute(httppost);
+
+			HttpEntity httpEntity = webServerAnswer.getEntity();
+
+			if (httpEntity != null) {
+
+				xml = EntityUtils.toString(httpEntity);
+				Log.d("XML", xml);
+			}
+
+		} catch (ClientProtocolException e) {
+			// Deal with it
+		} catch (IOException e) {
+			// Deal with it
+		}
+
+		return xml;
+
+	}
+	
+	public String getPostReportDetailsSubCon() {
+
+		// To use these Internet methods, AndroidManifest.xml must have the
+		// following permission:tring
+		// <uses-permission android:name="android.permission.INTERNET"/>
+		// Create the Apache HTTP client and post
+		
+		
+		
+		HttpClient httpclient = new DefaultHttpClient();
+		HttpPost httppost = new HttpPost(
+				API_URL);
+		String xml = "empty";
+		try {
+			// Add data to your post
+			List<NameValuePair> pairs = new ArrayList<NameValuePair>(2);
+			pairs.add(new BasicNameValuePair("username", getUsername()));
+			pairs.add(new BasicNameValuePair("password", getPassword()));
+			pairs.add(new BasicNameValuePair("action", actions[3]));
+			
+			
+			/// Specific data
+			
+			pairs.add(new BasicNameValuePair(parameters_job[2], getJobbean().getJobnumber()));
+			pairs.add(new BasicNameValuePair(parameters_equip[0], getSub_bean().getName()));
+			pairs.add(new BasicNameValuePair(parameters_equip[1], getSub_bean().getAmmount()));
 			
 			
 			//TODO add other parameters
