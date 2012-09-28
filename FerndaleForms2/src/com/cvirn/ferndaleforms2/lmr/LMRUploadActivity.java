@@ -292,12 +292,13 @@ class PostToCloud extends AsyncTask<String, String, String>{
 		for (int i=0;i<sub_holder.size();i++) {
 			client.setSub_bean(sub_holder.get(i));
 			String s=client.getPostReportDetailsSubCon();
-			//Log.d("POST","POST eq result="+e);
+			Log.d("POST","POST eq result="+s);
 			
 		}
 		//Signature upload
-		client.DoFileUpload(job.getJobnumber());
+		String sig=client.DoFileUpload(job.getJobnumber());
 		
+		Log.d("POST-SIG",sig);
 		return result;
 	}
 	

@@ -54,13 +54,13 @@ public class SignatureCapture extends Activity implements OnGesturePerformedList
 				Gesture gesture2=gesture.getGesture();
 				Bitmap bmp=gesture2.toBitmap(600, 400,-1 , Color.rgb(255, 255, 255));
 				String extStorageDirectory = Environment.getExternalStorageDirectory().toString();
-				//Log.d("SIGNATURE",extStorageDirectory );
+				Log.d("SIGNATURE",extStorageDirectory );
 			    OutputStream outStream = null;
-			    File file = new File(extStorageDirectory, jobnumber+"Signature.jpeg");
+			    File file = new File(extStorageDirectory, jobnumber+"Signature.png");
 			    file.getPath();
 			    try {
 			     outStream = new FileOutputStream(file);
-			     bmp.compress(Bitmap.CompressFormat.JPEG, 50, outStream);
+			     bmp.compress(Bitmap.CompressFormat.PNG, 50, outStream);
 			     outStream.flush();
 			     outStream.close();
 			     Toast.makeText(SignatureCapture.this, "Signature saved", Toast.LENGTH_LONG)
@@ -69,6 +69,7 @@ public class SignatureCapture extends Activity implements OnGesturePerformedList
 			    }
 			    catch(Exception e)
 			    {
+			    	Log.d("SIGNATURE", e.getLocalizedMessage());
 			    	Toast.makeText(SignatureCapture.this, "Signature save failed.", Toast.LENGTH_LONG)
 					.show();
 			    	

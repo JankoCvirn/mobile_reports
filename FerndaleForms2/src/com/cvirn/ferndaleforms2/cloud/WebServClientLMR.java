@@ -443,7 +443,7 @@ public class WebServClientLMR implements Serializable {
 			List<NameValuePair> pairs = new ArrayList<NameValuePair>(2);
 			pairs.add(new BasicNameValuePair("username", getUsername()));
 			pairs.add(new BasicNameValuePair("password", getPassword()));
-			pairs.add(new BasicNameValuePair("action", actions[3]));
+			pairs.add(new BasicNameValuePair("action", actions[4]));
 			
 			
 			/// Specific data
@@ -540,7 +540,7 @@ public String DoFileUpload (String job_id) {
 		
 		try
 		{
-		FileInputStream fileInputStream = new FileInputStream(new File(extStorageDirectory,job_id+"Signature.jpeg") );
+		FileInputStream fileInputStream = new FileInputStream(new File(extStorageDirectory,job_id+"Signature.png") );
 
 		URL url = new URL(urlServer);
 		connection = (HttpURLConnection) url.openConnection();
@@ -558,7 +558,7 @@ public String DoFileUpload (String job_id) {
 
 		outputStream = new DataOutputStream( connection.getOutputStream() );
 		outputStream.writeBytes(twoHyphens + boundary + lineEnd);
-		outputStream.writeBytes("Content-Disposition: form-data; name=\"file\";filename=\"" + job_id+"Signature.jpeg" +"\"" + lineEnd);
+		outputStream.writeBytes("Content-Disposition: form-data; name=\"file\";filename=\"" + job_id+"Signature.png" +"\"" + lineEnd);
 		outputStream.writeBytes(lineEnd);
 
 		bytesAvailable = fileInputStream.available();
