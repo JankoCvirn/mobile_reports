@@ -544,7 +544,7 @@ public String DoFileUpload (String job_id) {
 			
 			
 			
-		FileInputStream fileInputStream = new FileInputStream(new File(extStorageDirectory,job_id+"Signature.png") );
+		FileInputStream fileInputStream = new FileInputStream(new File(extStorageDirectory,job_id+"Signature.jpg") );
 		Log.d("FILE",fileInputStream.getFD().toString());
 		URL url = new URL(urlServer);
 		connection = (HttpURLConnection) url.openConnection();
@@ -562,7 +562,7 @@ public String DoFileUpload (String job_id) {
 
 		outputStream = new DataOutputStream( connection.getOutputStream() );
 		outputStream.writeBytes(twoHyphens + boundary + lineEnd);
-		outputStream.writeBytes("Content-Disposition: form-data; name=\"file\";filename=\"" + job_id+"Signature.png" +"\"" + lineEnd);
+		outputStream.writeBytes("Content-Disposition: form-data; name=\"file\";filename=\"" + job_id+"Signature.jpg" +"\"" + lineEnd);
 		outputStream.writeBytes(lineEnd);
 
 		bytesAvailable = fileInputStream.available();

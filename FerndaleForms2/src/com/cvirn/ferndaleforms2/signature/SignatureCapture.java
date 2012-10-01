@@ -52,15 +52,15 @@ public class SignatureCapture extends Activity implements OnGesturePerformedList
 		this.button1.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View target) {
 				Gesture gesture2=gesture.getGesture();
-				Bitmap bmp=gesture2.toBitmap(600, 400,-1 , Color.rgb(255, 255, 255));
+				Bitmap bmp=gesture2.toBitmap(400, 600,1,15 , Color.rgb(255, 255, 255));
 				String extStorageDirectory = Environment.getExternalStorageDirectory().toString();
 				Log.d("SIGNATURE",extStorageDirectory );
 			    OutputStream outStream = null;
-			    File file = new File(extStorageDirectory, jobnumber+"Signature.png");
+			    File file = new File(extStorageDirectory, jobnumber+"Signature.jpg");
 			    Log.d("SIGNATURE",file.getPath());
 			    try {
 			     outStream = new FileOutputStream(file);
-			     bmp.compress(Bitmap.CompressFormat.PNG, 50, outStream);
+			     bmp.compress(Bitmap.CompressFormat.JPEG, 0, outStream);
 			     outStream.flush();
 			     outStream.close();
 			     Toast.makeText(SignatureCapture.this, "Signature saved", Toast.LENGTH_LONG)
