@@ -57,7 +57,7 @@ public class SignatureCapture extends Activity implements OnGesturePerformedList
 				Log.d("SIGNATURE",extStorageDirectory );
 			    OutputStream outStream = null;
 			    File file = new File(extStorageDirectory, jobnumber+"Signature.png");
-			    file.getPath();
+			    Log.d("SIGNATURE",file.getPath());
 			    try {
 			     outStream = new FileOutputStream(file);
 			     bmp.compress(Bitmap.CompressFormat.PNG, 50, outStream);

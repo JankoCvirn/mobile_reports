@@ -526,7 +526,7 @@ public String DoFileUpload (String job_id) {
 		HttpURLConnection connection = null;
 		DataOutputStream outputStream = null;
 		//DataInputStream inputStream = null;
-
+		Log.d("FILE",job_id);
 		//TODO add webservice for upload
 		String urlServer = "http://108.179.218.75/signature/upload.php";
 		String lineEnd = "\r\n";
@@ -540,8 +540,12 @@ public String DoFileUpload (String job_id) {
 		
 		try
 		{
+		
+			
+			
+			
 		FileInputStream fileInputStream = new FileInputStream(new File(extStorageDirectory,job_id+"Signature.png") );
-
+		Log.d("FILE",fileInputStream.getFD().toString());
 		URL url = new URL(urlServer);
 		connection = (HttpURLConnection) url.openConnection();
 
